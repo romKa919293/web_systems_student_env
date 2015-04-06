@@ -1,0 +1,13 @@
+{% block content %}
+<br><f1>{{handle}}</f1><br>
+<form method = "{{method}}" action="{{action}}">
+    <table>
+    {%for field in fields%}
+        <tr>
+           <td><font {%if field.error%}color="gold"{%endif%}>{{field.label}}</font></td><td><input type = "{{field.type}}" name="{{field.name}}" value="{{field.value}}"/></td>
+        </tr>
+    {%endfor%}
+    </table>
+</form>
+{% endblock %}
+

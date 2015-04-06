@@ -1,0 +1,6 @@
+{% block content %}
+<table><tr>
+<td><font {%if error%}color="gold"{%endif%}>{{label}}</font></td><td><input type = "{{type}}" name="{{name}}" value="{{value}}"/></td>
+</tr></table>
+{% endblock %}
+
